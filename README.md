@@ -1,81 +1,167 @@
-# Webpack Linters Template
+<a name="readme-top"></a>
 
-This is a template repository for setting up a project with Webpack and linters (ESLint and Stylelint) configured. It provides a solid foundation for building JavaScript and CSS projects while ensuring code quality and adherence to coding standards.
+<div align="center">
 
-## Features
+  <h1><b>To Do List App- Microverse Project</b></h1>
 
--## Features
+</div>
 
-Create an index.html file and write  HTML markupt there.
- Created an empty To Do List placeholder (<div> or <ul> element). 
-Created an index.js file and set an array of some simple to do tasks.
- Each task object contains three keys:
-description [string].
-completed [bool].
-index: [number].
-Wrote a function to iterate over the tasks array and populate an HTML list item element for each task.
+<!-- TABLE OF CONTENTS -->
 
-## Getting Started
+## 📗 Table of Contents
 
-To use this template and set up your project, follow these steps:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-1. Click on the "Use this template" button or manually clone the repository.
-2. Clone the repository to your local machine using Git.
-   ```bash
-   git clone  https://github.com/ClarenceAtim/ToDoList
-   ```
-3. Navigate to the project directory.
-   ```bash
-   cd webpack-linters-template
-   ```
-4. Install the dependencies.
-   ```bash
-   npm install
-   ```
-5. Start the development server.
-   ```bash
-   npm start
-   ```
-   This will compile the project and launch the development server.
-6. Begin coding your project, writing JavaScript and CSS code in the `src` directory.
+<!-- PROJECT DESCRIPTION -->
 
-## Scripts
+# 📖 To Do List App- Microverse Project <a name="about-project"></a>
 
-The following scripts are available in the project:
+**To Do List** is a milestone project for microverse student in JavaScript Module
 
-- `npm start`: Starts the development server.
-- `npm run build`: Builds the project for production.
-- `npm run lint`: Runs ESLint and Stylelint to check for linting issues.
-- `npm test`: Runs the project's tests (if any).
-- `npm run deploy`: Deploys the project to GitHub Pages.
 
-## Configuration
+## 🛠 Built With <a name="built-with"></a>
 
-The project includes default configurations for ESLint and Stylelint, located in the root directory:
+### Tech Stack <a name="tech-stack"></a>
 
-- `.eslintrc.json`: ESLint configuration file with recommended settings.
-- `.stylelintrc.json`: Stylelint configuration file with recommended settings.
 
-You can modify these configuration files according to your project's requirements.
+<!-- Features -->
 
-## Pre-commit Hooks
+### Key Features <a name="key-features"></a>
+Create an index.html file and write HTML markupt there. 
+Created an empty To Do List placeholder 
+ Created an index.js file and set an array of some simple to do tasks.
+ Each task object contains three keys: description [string]. completed [bool]. index: [number].
+ Wrote a function to iterate over the tasks array and populate an HTML list item element for each task.
 
-The project is configured to run the linters automatically before committing changes, ensuring that code quality and style standards are maintained. If any issues are found, the commit will be blocked until the issues are resolved.
+- **Responsive**
 
-## Deploying to GitHub Pages
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To deploy your project to GitHub Pages, use the following script:
+<!-- LIVE DEMO -->
 
-```bash
-npm run deploy
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+```
+    node
 ```
 
-This script will use `gh-pages` to deploy the contents of the `dist` directory to the `gh-pages` branch of your repository. Make sure to set up GitHub Pages for your repository before running this command.
+### Setup
 
-## Contributing
+Clone this repository to your desired folder:
 
-If you have suggestions, improvements, or bug fixes, please feel free to contribute to this project. Fork the repository, make your changes, and submit a pull request with a clear description of your changes.
+```sh
+  git clone https://github.com/ClarenceAtim/ToDoList
 
-## License
+### Install
 
-The project is licensed under the [MIT License](LICENSE). Feel free to use and modify the template according to your needs.
+Install this project with:
+
+```sh
+  cd to-do-list-microverse
+  npms install
+```
+
+it will install the required package for running the project
+
+### Usage
+
+In this project , its included linter for HTML, CSS and JavaScript
+To use them, execute the following command:
+
+
+```sh
+    npx hint .
+    npx stylelint "**/*.{css,scss}"
+    npx eslint .
+```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+
+👤 olanike olatunji
+
+- GitHub: [@olanikegloria](https://github.com/ClarenceAtim)
+- LinkedIn: [olanike olatunji](https://www.linkedin.com/in/tegum-clarence-615b58200/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Add Account System**
+- **Add Account System**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+
+If you like this project you can share this project to your friend
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank microverse for this project
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
