@@ -4,11 +4,16 @@ This is a template repository for setting up a project with Webpack and linters 
 
 ## Features
 
-- Webpack configuration for bundling JavaScript and CSS files
-- ESLint for JavaScript linting with a recommended configuration
-- Stylelint for CSS linting with a recommended configuration
-- Pre-commit hooks to run linters before committing changes
-- Deployment script for deploying the project to GitHub Pages
+-## Features
+
+Create an index.html file and write  HTML markupt there.
+ Created an empty To Do List placeholder (<div> or <ul> element). 
+Created an index.js file and set an array of some simple to do tasks.
+ Each task object contains three keys:
+description [string].
+completed [bool].
+index: [number].
+Wrote a function to iterate over the tasks array and populate an HTML list item element for each task.
 
 ## Getting Started
 
@@ -17,7 +22,7 @@ To use this template and set up your project, follow these steps:
 1. Click on the "Use this template" button or manually clone the repository.
 2. Clone the repository to your local machine using Git.
    ```bash
-   git clone https://github.com/kit0-0/webpacl-linters-template.git
+   git clone  https://github.com/ClarenceAtim/ToDoList
    ```
 3. Navigate to the project directory.
    ```bash
