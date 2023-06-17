@@ -1,6 +1,6 @@
 import './style.css';
 import Data from './modules/data.js';
-import { getItems, addToLocalStorage } from './modules/utility.js';
+import { getItems, addToLocalStorage, clearCompletedTasks } from './modules/utility.js';
 import UI from './modules/ui.js';
 
 const form = document.querySelector('form');
@@ -37,4 +37,12 @@ form.addEventListener('submit', (e) => {
   }
 
   e.preventDefault();
+});
+
+const clearButton = document.querySelector('.btn-clear');
+clearButton.addEventListener('click', () => {
+  clearCompletedTasks();
+  // Refresh the UI to reflect the changes
+  const ui = new UI();
+  ui.refreshItems();
 });
