@@ -20,7 +20,7 @@ class UI {
     const edit = list.querySelector('.edit');
     const deleteBtn = list.querySelector('.list__item--delete');
 
-    edit.addEventListener('blur', editTodo)
+    edit.addEventListener('blur', editTodo);
 
     checkbox.addEventListener('change', () => {
       // Update the status of the task
