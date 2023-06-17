@@ -41,7 +41,18 @@ const deleteItemFromLocalStorage = (taskId) => {
   }
 };
 
+const editTodo = (e) => {
+  const { value, dataset } = e.target
+  const allTodos = getItems()
+
+  
+  allTodos[+dataset.id - 1].description = value
+  console.log(allTodos);
+
+  localStorage.setItem('items', JSON.stringify(allTodos));
+}
+
 export {
   getItems, addToLocalStorage, updateItemInLocalStorage,
-  deleteItemFromLocalStorage,
+  deleteItemFromLocalStorage, editTodo
 };

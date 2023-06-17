@@ -1,4 +1,4 @@
-import { updateItemInLocalStorage, deleteItemFromLocalStorage } from './utility.js';
+import { updateItemInLocalStorage, deleteItemFromLocalStorage, editTodo } from './utility.js';
 
 class UI {
   dispayItems(items) {
@@ -10,7 +10,7 @@ class UI {
     list.innerHTML = `
       <div class="list-item">
         <input type="checkbox" class="list__item--checkbox">
-        <input type="text" class="edit" value="${items.description}">
+        <input data-id=${items.index} type="text" class="edit" value="${items.description}">
       </div>
       <button id="${items.index}" class="list__item--delete"><i class="fa fa-trash-alt"></i></button>
     `;
@@ -19,6 +19,8 @@ class UI {
     const checkbox = list.querySelector('.list__item--checkbox');
     const edit = list.querySelector('.edit');
     const deleteBtn = list.querySelector('.list__item--delete');
+
+    edit.addEventListener('blur', editTodo)
 
     checkbox.addEventListener('change', () => {
       // Update the status of the task
