@@ -4,6 +4,10 @@ class Data {
     this.description = description;
     this.completed = completed;
   }
+
+  updateStatus(completed) {
+    this.completed = completed;
+  }
 }
 
 export default Data;

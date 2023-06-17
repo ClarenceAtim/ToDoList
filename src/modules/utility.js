@@ -50,8 +50,16 @@ const editTodo = (e) => {
 
   localStorage.setItem('items', JSON.stringify(allTodos));
 };
+const clearCompletedTasks = () => {
+  let todoList = getItems();
+  todoList = todoList.filter((todo) => !todo.completed);
+  todoList.forEach((todo, index) => {
+    todo.index = index + 1;
+  });
+  localStorage.setItem('items', JSON.stringify(todoList));
+};
 
 export {
   getItems, addToLocalStorage, updateItemInLocalStorage,
-  deleteItemFromLocalStorage, editTodo,
+  deleteItemFromLocalStorage, editTodo, clearCompletedTasks,
 };
