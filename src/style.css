@@ -1,9 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
-
 * {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.list-item .edit {
+  width: 93%;
+  outline: none;
+  text-align: start;
 }
 
 .container {
@@ -21,7 +44,7 @@
   background-color: white;
   padding: 1.5rem 0;
   padding-bottom: 0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -42,10 +65,10 @@
   border-bottom: 1.8px solid gainsboro;
 }
 
-.add-texts input {
-  width: 100%;
+input {
   border: none;
   outline: none;
+  text-align: start;
 }
 
 ul li {
@@ -80,4 +103,19 @@ ul li {
 
 .checked {
   text-decoration: line-through;
+}
+
+.delete,
+.delete input {
+  background-color: beige;
+}
+
+.hidden {
+  display: none;
+}
+
+.activities {
+  display: flex;
+  height: auto;
+  width: 500px;
 }

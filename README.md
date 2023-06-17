@@ -54,7 +54,7 @@ Created an empty To Do List placeholder
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="loading"></a>
 
 - [Live Demo Link]()
 
