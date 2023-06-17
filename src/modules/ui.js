@@ -1,4 +1,6 @@
-import { updateItemInLocalStorage, deleteItemFromLocalStorage, editTodo } from './utility.js';
+import {
+  updateItemInLocalStorage, deleteItemFromLocalStorage, editTodo, getItems,
+} from './utility.js';
 
 class UI {
   dispayItems(items) {
@@ -21,7 +23,6 @@ class UI {
     const deleteBtn = list.querySelector('.list__item--delete');
 
     edit.addEventListener('blur', editTodo);
-
     checkbox.addEventListener('change', () => {
       // Update the status of the task
       items.completed = !items.completed;
@@ -41,6 +42,15 @@ class UI {
     deleteBtn.addEventListener('click', () => {
       list.remove();
       deleteItemFromLocalStorage(items.index);
+    });
+  }
+
+  refreshItems() {
+    const tasks = document.querySelector('.tasks');
+    tasks.innerHTML = '';
+    const items = getItems();
+    items.forEach((item) => {
+      this.dispayItems(item);
     });
   }
 }
