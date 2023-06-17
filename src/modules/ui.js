@@ -23,21 +23,26 @@ class UI {
     const deleteBtn = list.querySelector('.list__item--delete');
 
     edit.addEventListener('blur', editTodo);
+
     checkbox.addEventListener('change', () => {
-      // Update the status of the task
       items.completed = !items.completed;
 
       if (items.completed === true) {
         edit.style.textDecoration = 'line-through';
-        checkbox.checked = true;
       } else {
         edit.style.textDecoration = 'none';
-        checkbox.checked = false;
       }
 
-      // Update the task in the localStorage
       updateItemInLocalStorage(items.index, items);
     });
+
+    checkbox.checked = items.completed;
+
+    if (items.completed === true) {
+      edit.style.textDecoration = 'line-through';
+    } else {
+      edit.style.textDecoration = 'none';
+    }
 
     deleteBtn.addEventListener('click', () => {
       list.remove();
