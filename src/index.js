@@ -1,27 +1,40 @@
 import './style.css';
-import ListStore, { renderTasks, updateLocalStorage } from './modules/utility.js';
+import Data from './modules/data.js';
+import { getItems, addToLocalStorage } from './modules/utility.js';
+import UI from './modules/ui.js';
 
-const newListStore = new ListStore();
+const form = document.querySelector('form');
 
-const listStorage = JSON.parse(localStorage.getItem('lists'));
-if (listStorage !== null) {
-  newListStore.lists = listStorage;
-}
-
-const addText = document.querySelector('.enter-text');
-
-addText.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter') {
-    const newList = {
-      id: newListStore.lists.length + 1,
-      description: event.target.value,
-      completed: false,
-    };
-    newListStore.add(newList);
-    renderTasks(newListStore); // Pass newListStore as the argument
-    event.target.value = '';
-    updateLocalStorage(newListStore); // Pass newListStore as the argument
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  const items = getItems();
+  const ui = new UI();
+  items.forEach((item) => {
+    ui.dispayItems(item);
+  });
 });
 
-renderTasks(newListStore); // Pass newListStore as the argument
+form.addEventListener('submit', (e) => {
+  const newId = getItems();
+  let index;
+  if (newId.length > 0) {
+    index = newId[newId.length - 1].index + 1;
+  } else {
+    index = 1;
+  }
+  const input = document.querySelector('input').value;
+  const completed = false;
+
+  if (input === '') {
+    console.log('Please enter a task');
+  } else {
+    const data = new Data(index, input, completed);
+    const ui = new UI();
+    ui.dispayItems(data);
+
+    addToLocalStorage(data);
+
+    document.querySelector('input').value = '';
+  }
+
+  e.preventDefault();
+});
