@@ -112,10 +112,10 @@ To use them, execute the following command:
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 olanike olatunji
+👤 clarence Atim
 
-- GitHub: [@olanikegloria](https://github.com/ClarenceAtim)
-- LinkedIn: [olanike olatunji](https://www.linkedin.com/in/tegum-clarence-615b58200/)
+- GitHub: clarence](https://github.com/ClarenceAtim)
+- LinkedIn: clarence](https://www.linkedin.com/in/tegum-clarence-615b58200/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
